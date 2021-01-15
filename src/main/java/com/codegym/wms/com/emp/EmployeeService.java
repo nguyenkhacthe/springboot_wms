@@ -1,9 +1,7 @@
 package com.codegym.wms.com.emp;
 
-import org.springframework.stereotype.Service;
+import com.codegym.wms.com.CommonService;
 
-import java.util.List;
+public interface EmployeeService extends CommonService<Employee> {
 
-public interface EmployeeService {
-    Iterable<Employee> findAll();
 }

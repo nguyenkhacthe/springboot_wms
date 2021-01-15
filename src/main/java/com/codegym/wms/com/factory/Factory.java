@@ -13,7 +13,37 @@ public class Factory {
     private String factoryId;
     private String factoryName;
     private String factoryAddress;
-    @JoinColumn(name = "manager_id")
-    @OneToOne
-    private Employee manager;
+
+    public Factory() {
+    }
+
+    public Factory(String factoryId, String factoryName, String factoryAddress) {
+        this.factoryId = factoryId;
+        this.factoryName = factoryName;
+        this.factoryAddress = factoryAddress;
+    }
+
+    public String getFactoryId() {
+        return factoryId;
+    }
+
+    public void setFactoryId(String factoryId) {
+        this.factoryId = factoryId;
+    }
+
+    public String getFactoryName() {
+        return factoryName;
+    }
+
+    public void setFactoryName(String factoryName) {
+        this.factoryName = factoryName;
+    }
+
+    public String getFactoryAddress() {
+        return factoryAddress;
+    }
+
+    public void setFactoryAddress(String factoryAddress) {
+        this.factoryAddress = factoryAddress;
+    }
 }
